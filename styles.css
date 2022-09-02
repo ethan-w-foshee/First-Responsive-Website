@@ -1,0 +1,144 @@
+@media (min-width: 576px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .top {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        background-color: rgb(43, 206, 192);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        font-size: 100px;
+    }
+    .bottom {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+        background-color: rgb(27, 27, 27);
+        color: white;
+    }
+
+    :is(.blue, .green, .red) {
+        /* border: red 1px solid; */
+        margin: 5px;
+    }
+
+    :is(.blue, .green, .red)  h1{
+        /* border: red 1px solid; */
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0px;
+    }
+
+    :is(.blueSquare, .greenSquare, .redSquare) {
+        height: 35px;
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+
+    .blue {
+        grid-column: 2/3;
+    }
+
+    .blueSquare {
+        background-color: rgb(51, 168, 221);
+    }
+
+    .red {
+        grid-column: 4/5;
+    }
+
+    .redSquare {
+        background-color: rgb(244, 104, 49);
+    }
+
+    .green {
+        grid-column: 6/7;
+    }
+
+    .greenSquare {
+        background-color: rgb(43, 206, 192);
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 75%;
+    }
+
+    .top {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        background-color: rgb(51, 168, 221);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        font-size: 50px;
+        padding: 75px;
+    }
+    .bottom {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 1fr;
+        background-color: white;
+        color: black;
+    }
+
+    :is(.blue, .green, .red) {
+        /* border: red 1px solid; */
+        margin: 5px;
+    }
+
+    :is(.blue, .green, .red)  h1{
+        /* border: red 1px solid; */
+        color: black;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0px;
+    }
+
+    :is(.blueSquare, .greenSquare, .redSquare) {
+        height: 35px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .blue {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .blueSquare {
+        background-color: rgb(51, 168, 221);
+    }
+
+    .red {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .redSquare {
+        background-color: rgb(244, 104, 49);
+    }
+
+    .green {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .greenSquare {
+        background-color: rgb(43, 206, 192);
+    }
+}
